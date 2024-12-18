@@ -14,6 +14,11 @@ public class Main {
     }
 
     public static int div(int num1, int num2){
-        return num1 / num2;
+        try {
+            return num1 / num2;
+        } catch (ArithmeticException e){
+            System.err.println("The denominator must not be 0");
+            throw e;
+        }
     }
 }
