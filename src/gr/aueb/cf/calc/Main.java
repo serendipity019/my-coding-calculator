@@ -17,7 +17,7 @@ public class Main {
         try {
             return num1 / num2;
         } catch (ArithmeticException e){
-            System.err.println("The denominator must not be 0");
+            System.err.println("Error. The denominator must not be 0");
             throw e;
         }
     }
